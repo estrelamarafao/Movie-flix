@@ -13,14 +13,12 @@
   width: 100%; 
 }
 
-.film-item {
-  position: relative;
-  width: 100%;
-  height: 200px; 
-}
-
-.film-item img {
-  width: 100%;
-  height: 100%; 
-  object-fit: cover;
+.movies-container {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  max-width: 50%;
+  @media (max-width: 600px) {
+    max-width: 100%;
+  }
 }

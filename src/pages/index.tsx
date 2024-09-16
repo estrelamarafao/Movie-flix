@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
           style={{ minWidth: '100%', height: '300px', objectFit: 'cover' }} 
         />
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', maxWidth: '50%' }}>
+      <div className='movies-container'>
         {movies.map((movie: any, index: number) => (
           <MovieCard key={index} movie={{ ...movie }} />
         ))}

@@ -2,6 +2,7 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import { Facebook, Twitter, Instagram } from '@mui/icons-material';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -41,15 +42,21 @@ const Footer: React.FC = () => {
         </Box>
 
         <Box sx={{ display: 'flex', gap: '5px' }}>
-          <IconButton color="inherit" aria-label="facebook">
-            <Facebook />
-          </IconButton>
-          <IconButton color="inherit" aria-label="twitter">
-            <Twitter />
-          </IconButton>
-          <IconButton color="inherit" aria-label="instagram">
-            <Instagram />
-          </IconButton>
+          <Link style={{textDecoration: 'none', color: 'white'}} href="https://www.instagram.com/slideworks.cc">
+            <IconButton color="inherit" aria-label="facebook">
+              <Facebook />
+            </IconButton>
+          </Link>
+          <Link style={{textDecoration: 'none', color: 'white'}} href="https://www.instagram.com/slideworks.cc">
+            <IconButton color="inherit" aria-label="twitter">
+              <Twitter />
+            </IconButton>
+          </Link>
+          <Link style={{textDecoration: 'none', color: 'white'}} href="https://www.instagram.com/slideworks.cc">
+            <IconButton color="inherit" aria-label="instagram">
+              <Instagram />
+            </IconButton> 
+          </Link>
         </Box>
       </Box>
     </Box>
